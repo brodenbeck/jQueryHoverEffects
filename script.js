@@ -1,7 +1,7 @@
 
 $("document").ready(function(){
 	var originalText;
-	
+
 	$("li").hover(function() {
 		$(this).fadeTo(150, 0.25);
 	},
@@ -13,7 +13,7 @@ $("document").ready(function(){
 
 		if($(this).text() === "clicked!") {
 			$(this).text(originalText); // needs to be changed
-			$(this).css("background-color", "rgba(0, 0, 0, 0)")
+			$(this).css("background-color", "#d3d3d3")
 		} else {
 			originalText = $(this).text();
 			$(this).text("clicked!");
